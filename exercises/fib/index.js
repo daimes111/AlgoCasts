@@ -8,6 +8,16 @@
 // Example:
 //   fib(4) === 3
 
-function fib(n) {}
+function fib(n) {
+
+    let fibSeq = []
+    fibSeq[0] = 0
+    fibSeq[1] = 1
+    
+    for (let i = 2; i<= n; i++){
+        fibSeq[i] = fibSeq[i-2] + fibSeq[i-1]
+        
+    } return fibSeq[n]
+}
 
 module.exports = fib;
